@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreyash College Exam Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: url('https://c7.alamy.com/comp/KYYGKF/university-graduates-graduation-university-graduates-graduation-college-KYYGKF.jpg') no-repeat center center/cover;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center h-screen bg-gray-100 bg-opacity-50">
+
+    <nav class="absolute top-0 w-full bg-white bg-opacity-90 shadow-md p-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold text-blue-600 ml-6">Shreyash College</h1>
+        <div class="mr-6">
+            <a href="#about" class="text-gray-700 mx-3 hover:text-blue-600">About</a>
+            <a href="#contact" class="text-gray-700 mx-3 hover:text-blue-600">Contact</a>
+            <a href="#login" class="text-blue-600 font-bold mx-3">Login</a>
+        </div>
+    </nav>
+
+    <div id="login" class="bg-white p-8 rounded-2xl shadow-lg w-96 backdrop-blur-md bg-opacity-90 mt-20">
+        <h2 class="text-2xl font-bold text-center text-blue-600">Exam Portal Login</h2>
+        <p class="text-center text-gray-600 mb-6">Enter your credentials to continue</p>
+
+        <form action="#" method="POST">
+            <div class="mb-4">
+                <label class="block text-gray-700 font-semibold">Student ID</label>
+                <input type="text" name="student_id" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 font-semibold">Password</label>
+                <input type="password" name="password" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+            </div>
+
+            <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700">Login</button>
+        </form>
+    </div>
+
+    <div id="contact" class="mt-6 text-center text-white">
+        <p>Need help? <a href="#" class="underline">Contact Us</a></p>
+    </div>
+
+    <div id="about" class="mt-6 text-center text-white">
+        <p><a href="#" class="underline">About Us</a></p>
+    </div>
+</body>
+</html>
